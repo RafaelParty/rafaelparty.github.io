@@ -1,132 +1,177 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
+<title>Nicolas Rafael</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
 
-<head>
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
 
-    <!-- SEO -->
-    <title>Split - HTML Template Demo</title>
-    <meta name="description"
-        content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
-    <meta name="robots" content="index, follow" />
-    <meta name="referrer" content="always" />
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
 
-    <!-- Social & Open Graph -->
-    <meta property="og:title" content="Split - HTML Template Demo" />
-    <meta property="og:description"
-        content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
-    <meta property="og:image" content="https://demo.onepagelove.com/fullsingle-html/split/images/social.jpg">
-    <!-- include your hosted image full URL -->
-    <meta property="og:url" content="https://demo.onepagelove.com/fullsingle-html/split/" />
-    <meta name="twitter:title" content="Split - HTML Template Demo">
-    <meta name="twitter:description"
-        content="Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content." />
-    <meta name="twitter:image" content="https://demo.onepagelove.com/fullsingle-html/split/images/social.jpg" />
-    <!-- include your hosted image full URL -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@onepagelove" />
-    <meta name="twitter:creator" content="@robhope" />
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+    @media(min-width: 601px) {
+        .w3-image {
+            width: 50%
+        }
+    }
 
-    <!-- Styles -->
-    <link rel='stylesheet' href='assets/css/split.css' type='text/css' media='screen' />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    ;
+</style>
+<script>
+</script>
 
-</head>
+<body class="w3-black">
 
-<body id="fullsingle" class="page-template-page-fullsingle-split">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="./img/logo.png" style="width:100%">
+        <a href="mailto:contato@medicshape.com.br" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>E-MAIL</p>
+        </a>
+        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=11994819878" target="_blank"
+            class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-whatsapp w3-xxlarge"></i>
+            <p>WHATSAPP</p>
+        </a>
+        <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-phone w3-xxlarge"></i>
+            <p>CONTATOS</p>
+        </a>
+    </nav>
 
-    <div class="fs-split">
-
-        <!-- Image Side -->
-        <div class="split-image">
-
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="mailto:contato@medicshape.com.br" class="w3-bar-item w3-button"
+                style="width:25% !important">Email</a>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=11994819878" target="_blank"
+                class="w3-bar-item w3-button" style="width:25% !important">Whatsapp</a>
+            <a href="#contato" class="w3-bar-item w3-button" style="width:25% !important">Contatos</a>
         </div>
-
-        <!-- Content Side -->
-        <div class="split-content">
-
-            <div class="split-content-vertically-center">
-
-                <div class="split-intro">
-
-                    <h1>Nicolas Rafael</h1>
-
-                    <span class="tagline">Designer. Stylist. Nomad.</span>
-
-                </div>
-
-                <div class="split-bio">
-
-                    <p>Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra <a
-                            href="#">luctus urna</a> ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper,
-                        <a href="#">ipsum in</a> malesuada congue, <a href="#">purus sem</a> ullamcorper massa, sit amet
-                        lacinia nibh enim sed massa. </p>
-
-                </div>
-
-                <div class="split-lists">
-
-                    <div class="split-list">
-
-                        <h3>Connect</h3>
-
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Email</a></li>
-                            <li><a href="#">Newsletter</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div class="split-list">
-
-                        <h3>Social</h3>
-
-                        <ul>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Dribbble</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div class="split-list">
-
-                        <h3>Network</h3>
-
-                        <ul>
-                            <li><a href="#">Link One</a></li>
-                            <li><a href="#">Link Two</a></li>
-                            <li><a href="#">Link Three</a></li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <div class="split-credit">
-
-                    <p>&copy;2017 <a href="#">Your Name</a> - <a href="https://onepagelove.com/split">Split Template</a>
-                        by <a href="https://onepagelove.com">One Page Love</a></p>
-
-                    <!-- 
-				To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split 
-				this really helps contribute towards us developing more templates and means the world to me!
-				Cheers, Rob (@robhope)
-				-->
-
-                </div>
-
-            </div>
-
-        </div>
-
     </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Nicolas <span class="w3-hide-small">
+                    </span> Rafael</h1>
+            <p>Estudante do Lucena</p>
+            <img src="./img/perfil.png" alt="boy" class="w3-image" width="992" height="1108">
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">Sobre mim</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris
+                nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim
+                id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <!-- <h3 class="w3-padding-16 w3-text-light-grey">Médic Shape</h3>
+            <p class="w3-wide"><span style="font-weight: bolder">Endereço:</span> Av. Cauaxi, 293 - Alphaville
+                Industrial - Barueri - SP</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:6px;width:100%"></div>
+            </div>
+            <p class="w3-wide"><span style="font-weight: bolder">Telefone:</span> (11) 9 9481-9878</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:6px;width:100%"></div>
+            </div>
+            <p class="w3-wide"><span style="font-weight: bolder">Sala: </span>416</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:6px;width:100%"></div>
+            </div><br>
+
+            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+                <div class="w3-quarter w3-section" style="padding: 1em">
+                    <h4 style="color: #d20">Consultoria Esportiva</h4><br>
+                    <p>O educador físico estabelecerá as melhores atividades físicas para você bem como a intensidade
+                        que deve ter ao realizar os exercícios, potencializando e melhorando seus resultados. </p>
+                </div>
+                <div class="w3-quarter w3-section" style="padding: 1em">
+                    <h4 style="color: #d20">Botox</h4><br>
+                    <p>Indicado para suavizar as rugas e linhas de expressão do rosto como as rugas da testa, a glabela
+                        (espaço entre as sobrancelhas) e, os pés de galinha, rugas que se formam na região dos olhos</p>
+                </div>
+                <div class="w3-quarter w3-section" style="padding: 1em">
+                    <h4 style="color: #d20">Tratamento de Acne</h4><br>
+                    <p>Tratamento que pode incluir cremes, géis, sabonetes e antibióticos orais. Extração de comedões,
+                        punção ou drenagem, infiltração de medicações e tratamento de cicatrizes podem ser recomendados.
+                    </p>
+                </div>
+                <div class="w3-quarter w3-section" style="padding: 1em">
+                    <h4 style="color: #d20">Limpeza de Pele</h4><br>
+                    <p>Procedimento que remove cravos e impurezas da pele. A limpeza de pele também remove o milium, que
+                        são pequenos cistos salientes causados pelo acúmulo de óleo e pele nos poros. </p>
+                </div>
+            </div> -->
+
+            <!-- Contact Section -->
+            <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+                <h2 class="w3-text-light-grey">Contato</h2>
+                <hr style="width:200px" class="w3-opacity">
+
+                <div class="w3-section" id="contato">
+                    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Maceió -
+                        Alagoas</p>
+                    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> (82) 9 8863-5303</p>
+                    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
+                        </i>10nicolasrafael@gmail.com</p>
+                </div><br>
+
+                <!-- Footer -->
+                <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=82988635303" target="_blank"><i
+                            class="fa fa-whatsapp w3-hover-opacity"></i></a>
+                    <a href="mailto:10nicolasrafael@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+                    <!-- End footer -->
+                </footer>
+
+                <!-- END PAGE CONTENT -->
+            </div>
 
 </body>
 
